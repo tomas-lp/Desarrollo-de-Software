@@ -1,10 +1,11 @@
+require('dotenv').config({path: '../.env'})
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./modelo');
 
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
