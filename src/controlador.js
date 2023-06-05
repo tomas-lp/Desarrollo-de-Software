@@ -6,10 +6,9 @@ const db = require('./modelo');
 const app = express();
 const PORT = 4000;
 
-app.use(express.json({ limit: '10mb' }));
+//Configuración de los middleware, para manejar las solicitudes en formato JSON
+app.use(express.json({ limit: '10mb', extended: true }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 // Obtener todos los productos
 app.get('/productos', (req, res) => {
