@@ -19,15 +19,16 @@ function App() {
     if (producto.nombre !== nombreActual) {
       // Mostrar nombre y descripción
       productosRenderizados.push(
-        <li key={producto.id}>
-          <strong>{producto.nombre}</strong> - {producto.descripcion}
-        </li>
+        <li key={producto.id}><strong>{producto.nombre}</strong></li>
+      );
+      productosRenderizados.push(
+        <div key={producto.id}> - {producto.descripcion}</div>
       );
       nombreActual = producto.nombre;
     } else {
       // Mostrar solo la descripción
       productosRenderizados.push(
-        <div key={producto.id}>- - - {producto.descripcion}</div>
+        <div key={producto.id}> - {producto.descripcion}</div>
       );
     }
   });
