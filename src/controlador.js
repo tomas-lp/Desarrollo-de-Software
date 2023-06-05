@@ -5,7 +5,7 @@ const db = require('./modelo');
 
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.SERVER_PORT || 4000;
 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
