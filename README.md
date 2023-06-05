@@ -9,7 +9,7 @@ Este es un proyecto donde se realizó la ACT-7 para la materia Desarrollo de Sof
     npm install react-scripts@latest 
 ```
 
-## Tener creada una base de datos "desarrollo-7" en el puerto 3307 con los siguientes datos:   
+## Tener creada una base de datos "desarrollo-7" con los siguientes datos:   
 ```javascript
     host: 'localhost',
     user: 'root',
@@ -18,7 +18,7 @@ Este es un proyecto donde se realizó la ACT-7 para la materia Desarrollo de Sof
     port: '3307'
 ```
 
-**Nota: Para crear la base de datos y gestionarla usamos XAMPP y PHPmyAdmin en el puerto 3307, si se desea levantarla en otro puerto cambiar el port en ./src/modelo.js**
+**Nota: Para crear la base de datos y gestionarla usamos XAMPP y PHPmyAdmin en el puerto 3307, si se desea levantarla en otro puerto cambiar el port**
 
 ## Crear en la BD una tabla "productos" con los atributos "id","nombre" y "descripcion":
 ```python
@@ -43,7 +43,7 @@ Este es un proyecto donde se realizó la ACT-7 para la materia Desarrollo de Sof
     INSERT INTO `productos`(`id`, `nombre`, `descripcion`) VALUES (11, 'Shorts', 'Shorts deportivos negros');
 ```
 
-## Ahora con la BD lista y ejecutandose en el puerto 3307, para inicializar el servidor o "controlador.js" en la temrinal ejecutar el comando:
+## Ahora ya con la BD levantada, para inicializar el servidor o "controlador.js" en la terminal ejecutar el comando:
 ```console
     node controlador.js (si la ruta actual es ../src)
 ```
