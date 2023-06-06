@@ -48,7 +48,7 @@ function App() {
 function renderProducto(arrayProducto){
   let render = [];
   render.push( //Agrego el titulo (tipo de producto)
-    <li className='tituloProd' key={arrayProducto[0].id}><strong>{arrayProducto[0].nombre}</strong></li>
+    <li className='tituloProd' key={arrayProducto[0].id}>{arrayProducto[0].nombre}</li>
   );
   render.push( //Agrego la descripcion
     <div className='descProd' key={arrayProducto[0].id}>{arrayProducto[0].descripcion}</div>
